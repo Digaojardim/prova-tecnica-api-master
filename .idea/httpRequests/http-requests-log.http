@@ -1,3 +1,10 @@
+DELETE http://localhost:8080/api/v1/simulacoes/97093236999
+Accept: application/json
+
+<> 2022-03-18T154351.200.json
+
+###
+
 DELETE http://localhost:8080/api/v1/simulacoes/97093236765
 Accept: application/json
 
@@ -609,13 +616,6 @@ GET http://localhost:8080/api/v1/restricoes/01317496094
 Accept: application/json
 
 <> 2022-03-18T052607.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/26276298085
-Accept: application/json
-
-<> 2022-03-18T052602.200.json
 
 ###
 
