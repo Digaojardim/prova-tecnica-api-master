@@ -1,3 +1,23 @@
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236999,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T152938.404.json
+
+###
+
 GET http://localhost:8080/api/v1/restricoes/97093236014
 
 <> 2022-03-18T152454.200.json
@@ -596,13 +616,6 @@ GET http://localhost:8080/api/v1/restricoes/26276298085
 Accept: application/json
 
 <> 2022-03-18T052558.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/62648716050
-Accept: application/json
-
-<> 2022-03-18T052553.200.json
 
 ###
 
