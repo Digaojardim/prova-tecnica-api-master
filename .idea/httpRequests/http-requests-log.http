@@ -1,3 +1,13 @@
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+<> 2022-03-18T152454.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+###
+
 POST http://localhost:8080/api/v1/simulacoes
 Content-Type: application/json
 
@@ -593,20 +603,6 @@ GET http://localhost:8080/api/v1/restricoes/62648716050
 Accept: application/json
 
 <> 2022-03-18T052553.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/62648716050
-Accept: application/json
-
-<> 2022-03-18T052544.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/84809766080
-Accept: application/json
-
-<> 2022-03-18T052003.200.json
 
 ###
 
