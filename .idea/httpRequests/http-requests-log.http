@@ -1,446 +1,612 @@
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-<> 2022-03-16T182310.200.txt
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/70932360199
-Accept: application/json
-
-<> 2022-03-16T182257.404.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/70932360199
-Accept: application/json
-
-<> 2022-03-16T182255.404.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T182139.404.json
-
-###
-
-PUT http://localhost:8080/api/v1/simulacoes/97093236019
+POST http://localhost:8080/api/v1/simulacoes
 Content-Type: application/json
 
 {
+  "nome": "Fulano de Quarto",
+  "cpf": 97093236065,
+  "email": "email@email.com",
+  "valor": 1100,
+  "parcelas": 3,
+  "seguro": true
 
-  "nome": "Agora Vai",
-  "cpf": 97093236019,
-  "email": "Agorasim@email.com",
+
+
+
+}
+
+<> 2022-03-18T143039.201.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+<> 2022-03-18T143027.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+<> 2022-03-18T143024.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+<> 2022-03-18T141944.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/97093236014
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236999
+Accept: application/json
+
+<> 2022-03-18T061937.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236999
+Accept: application/json
+
+<> 2022-03-18T061931.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061835.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061832.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061823.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061728.200.json
+
+###
+
+DELETE http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061725.200.json
+
+###
+
+GET http://localhost:8080/api/v1/simulacoes/97093236765
+Accept: application/json
+
+<> 2022-03-18T061520.200.json
+
+###
+
+GET http://localhost:8080/api/v1/simulacoes
+
+Accept: application/json
+
+<> 2022-03-18T061309.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236999,
+  "email": "email@email.com",
   "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T060855.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T060822.400.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T060819.400.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T060725.400.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236999
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T060719.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes/97093236765
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236065
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+}
+
+<> 2022-03-18T060425.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236014
+Content-Type: application/json
+
+{
+  "nome": "Fulano de ",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+}
+
+<> 2022-03-18T060249.404.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236014
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Tal",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+}
+
+<> 2022-03-18T060107.404.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236014
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Tal",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+}
+
+<> 2022-03-18T060104.404.json
+
+###
+
+PUT http://localhost:8080/api/v1/simulacoes/97093236014
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Tal",
+  "cpf": 97093236014,
+  "email": "email@email.com",
+  "valor": 1200,
+  "parcelas": 3,
+  "seguro": true
+}
+
+<> 2022-03-18T060045.404.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Papagaio",
+  "cpf": 97093236999,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+}
+
+<> 2022-03-18T055302.201.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano ",
+  "cpf": 97093236799,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 3,
+  "seguro": true
+
+}
+
+<> 2022-03-18T055029.201.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Quinto",
+  "cpf": 97093236765,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 3,
+  "seguro": true
+
+
+}
+
+<> 2022-03-18T055017.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Quarto",
+  "cpf": 97093236065,
+  "email": "email@email.com",
+  "valor": 1100,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T054659.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Quarto",
+  "cpf": 97093236065,
+  "email": "email@email.com",
+  "valor": 1100,
+  "parcelas": 3,
+  "seguro": true
+
+
+
+
+}
+
+<> 2022-03-18T054656.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Quinto",
+  "cpf": 97093236765,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 3,
+  "seguro": true
+
+
+}
+
+<> 2022-03-18T054147.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Quinto",
+  "cpf": 97093236765,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 3,
+  "seguro": true
+
+
+}
+
+<> 2022-03-18T054122.400.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Tres",
+  "cpf": 97093236765,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 5,
+  "seguro": true
+
+
+
+}
+
+<> 2022-03-18T053817.201.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+Content-Type: application/json
+
+{
+  "nome": "Fulano de Dois",
+  "cpf": 97093236031,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 4,
+  "seguro": true
+
+}
+
+<> 2022-03-18T053609.201.json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+
+{
+  "nome": "Fulano de Dois",
+  "cpf": 97093236031,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 4,
+  "seguro": true
+}
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+
+{
+  "nome": "Fulano de Dois",
+  "cpf": 97093236031,
+  "email": "email@email.com",
+  "valor": 1300,
+  "parcelas": 4,
+  "seguro": true
+}
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/v1/simulacoes
+
+{
+  "nome": "Fulano de Dois",
+  "cpf": 97093236031,
+  "email": "email@email.com",
+  "valor": 1300,
   "parcelas": 4,
   "seguro": true
 }
 
-<> 2022-03-16T182132.200.json
+Accept: application/json
 
 ###
 
 POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
 
 {
-  "nome": "Joao Pedro",
-  "cpf": 97093236011,
-  "email": "Agoravai@email.com",
+  "nome": "Fulano de Dois",
+  "cpf": 97093236031,
+  "email": "email@email.com",
   "valor": 1200,
   "parcelas": 3,
   "seguro": true
-
 }
 
-<> 2022-03-16T182111.201.json
-
-###
-
-POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
-
-{
-  "nome": "Joao Pedro",
-  "cpf": 97093236010,
-  "email": "Agoravai@email.com",
-  "valor": 1200,
-  "parcelas": 3,
-  "seguro": true
-
-}
-
-<> 2022-03-16T182051.400.json
-
-###
-
-POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
-
-{
-  "nome": "Joao Pedro",
-  "cpf": 97093236010,
-  "email": "Agoravai@email.com",
-  "valor": 1200,
-  "parcelas": 3,
-  "seguro": true
-
-}
-
-<> 2022-03-16T182047.400.json
+Accept: application/json
 
 ###
 
 GET http://localhost:8080/api/v1/restricoes/58063164083
 Accept: application/json
 
-<> 2022-03-16T182029.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181837.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181834.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181827.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181820.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181815.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181806.200.json
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-<> 2022-03-16T181727.200.txt
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T181719.404.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T181700.404.json
-
-###
-
-PUT http://localhost:8080/api/v1/simulacoes/97093236019
-Content-Type: application/json
-
-{
-
-  "nome": "Agora Vai",
-  "cpf": 97093236019,
-  "email": "Agorasim@email.com",
-  "valor": 1200,
-  "parcelas": 4,
-  "seguro": true
-}
-
-<> 2022-03-16T181654.200.json
-
-###
-
-POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
-
-{
-  "nome": "Joao Pedro",
-  "cpf": 97093236010,
-  "email": "Agoravai@email.com",
-  "valor": 1200,
-  "parcelas": 3,
-  "seguro": true
-
-}
-
-<> 2022-03-16T181647.400.json
+<> 2022-03-18T052820.200.json
 
 ###
 
 GET http://localhost:8080/api/v1/restricoes/58063164083
 Accept: application/json
 
-<> 2022-03-16T181632.200.json
+<> 2022-03-18T052631.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/24094592008
+Accept: application/json
+
+<> 2022-03-18T052625.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/24094592008
+Accept: application/json
+
+<> 2022-03-18T052623.200.json
+
+###
+
+GET http://localhost:8080/api/v1/restricoes/19626829001
+Accept: application/json
+
+<> 2022-03-18T052620.200.json
 
 ###
 
 GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T181609.200.json
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-<> 2022-03-16T180823.200.txt
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
 Accept: application/json
 
-<> 2022-03-16T180818.404.json
+<> 2022-03-18T052612.200.json
 
 ###
 
-GET http://localhost:8080/api/v1/simulacoes
+GET http://localhost:8080/api/v1/restricoes/01317496094
 Accept: application/json
 
-<> 2022-03-16T180813.200.json
+<> 2022-03-18T052607.200.json
 
 ###
 
-PUT http://localhost:8080/api/v1/simulacoes/97093236019
-Content-Type: application/json
-
-{
-
-  "nome": "Agora Vai",
-  "cpf": 97093236019,
-  "email": "Agorasim@email.com",
-  "valor": 1200,
-  "parcelas": 4,
-  "seguro": true
-}
-
-<> 2022-03-16T180808.200.json
-
-###
-
-POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
-
-{
-  "nome": "Joao Pedro",
-  "cpf": 97093236010,
-  "email": "Agoravai@email.com",
-  "valor": 1200,
-  "parcelas": 3,
-  "seguro": true
-
-}
-
-<> 2022-03-16T180803.400.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/58063164083
+GET http://localhost:8080/api/v1/restricoes/26276298085
 Accept: application/json
 
-<> 2022-03-16T180756.200.json
+<> 2022-03-18T052602.200.json
 
 ###
 
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T180751.200.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes
+GET http://localhost:8080/api/v1/restricoes/26276298085
 Accept: application/json
 
-<> 2022-03-16T180736.200.json
+<> 2022-03-18T052558.200.json
 
 ###
 
-GET http://localhost:8080/api/v1/simulacoes/58063164083
+GET http://localhost:8080/api/v1/restricoes/62648716050
 Accept: application/json
 
-<> 2022-03-16T180728.404.json
+<> 2022-03-18T052553.200.json
 
 ###
 
-GET http://localhost:8080/api/v1/simulacoes/58063164083
+GET http://localhost:8080/api/v1/restricoes/62648716050
 Accept: application/json
 
-<> 2022-03-16T180723.404.json
+<> 2022-03-18T052544.200.json
 
 ###
 
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-<> 2022-03-16T180714.200.txt
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-<> 2022-03-16T180709.200.txt
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T172153.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T172148.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/55856777050
-
-<> 2022-03-16T172109.200.json
-
-###
-
-GET http://localhost:8080/api/v1/restricoes/58063164083
+GET http://localhost:8080/api/v1/restricoes/84809766080
 Accept: application/json
 
-<> 2022-03-16T163811.200.json
-
-###
-
-POST http://localhost:8080/api/v1/simulacoes
-Content-Type: application/json
-
-{
-  "nome": "Joao Pedro",
-  "cpf": 97093236010,
-  "email": "Agoravai@email.com",
-  "valor": 1200,
-  "parcelas": 3,
-  "seguro": true
-
-}
-
-<> 2022-03-16T163810.201.json
-
-###
-
-PUT http://localhost:8080/api/v1/simulacoes/97093236019
-Content-Type: application/json
-
-{
-
-  "nome": "Agora Vai",
-  "cpf": 97093236019,
-  "email": "Agorasim@email.com",
-  "valor": 1200,
-  "parcelas": 4,
-  "seguro": true
-}
-
-<> 2022-03-16T163810-1.200.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes
-Accept: application/json
-
-<> 2022-03-16T163810.200.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T163810.404.json
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-{}
-
-<> 2022-03-16T163810.200.txt
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-Content-Type: application/json
-
-{}
-
-<> 2022-03-16T163642.200.txt
-
-###
-
-DELETE http://localhost:8080/api/v1/simulacoes/21
-
-Content-Type: application/json
-
-{}
-
-<> 2022-03-16T163624.200.txt
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes
-Accept: application/json
-
-<> 2022-03-16T163556.200.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T163316.404.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/58063164083
-Accept: application/json
-
-<> 2022-03-16T163312.404.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/97093236017
-Accept: application/json
-
-<> 2022-03-16T163116.200.json
-
-###
-
-GET http://localhost:8080/api/v1/simulacoes/97093236017
-Accept: application/json
-
-<> 2022-03-16T163108.200.json
+<> 2022-03-18T052003.200.json
 
 ###
 
