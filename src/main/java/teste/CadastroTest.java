@@ -1,4 +1,4 @@
-package br.com.sicredi.simulacao.controller;
+package teste;
 
 import antlr.build.Tool;
 import io.restassured.http.ContentType;
@@ -217,6 +217,33 @@ public class CadastroTest {
                         "  \"email\": \"zequias@email.com\",\n" +
                         "  \"valor\": 6200,\n" +
                         "  \"parcelas\": 3,\n" +
+                        "  \"seguro\": true\n" +
+                        "}")
+                .contentType(ContentType.JSON)
+                .when()
+                .post("/v1/simulacoes")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(201);
+
+    }
+
+    @Test
+    public void testDadoQueCadastroUsuario09QuandoPreenchoAsiInformacoesEntaoValidoStatusCode201() {
+        // Configurar o caminho comum de acesso a minha API Rest
+        baseURI = "http://localhost";
+        port = 8080;
+        basePath = "/api";
+
+        // Cadastrar usuario
+        given()
+                .body("{\n" +
+                        "  \"nome\": \"Sandro\",\n" +
+                        "  \"cpf\": 66093236093,\n" +
+                        "  \"email\": \"sadro@email.com\",\n" +
+                        "  \"valor\": 7800,\n" +
+                        "  \"parcelas\": 2,\n" +
                         "  \"seguro\": true\n" +
                         "}")
                 .contentType(ContentType.JSON)
