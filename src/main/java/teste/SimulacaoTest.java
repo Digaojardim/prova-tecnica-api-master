@@ -14,7 +14,7 @@ public class SimulacaoTest {
         basePath = "/api";
 
     // Retorna todas as simulações existentes
-    given().when().get("http://localhost:8080/api/v1/simulacoes/97093236014").then().log().all();
+    given().when().get("http://localhost:8080/api/v1/simulacoes").then().log().all();
 
 
     }
