@@ -144,5 +144,88 @@ public class CadastroTest {
                 .statusCode(201);
 
     }
-}
 
+    @Test
+    public void testDadoQueCadastroUsuario06QuandoPreenchoAsiInformacoesEntaoValidoStatusCode201() {
+        // Configurar o caminho comum de acesso a minha API Rest
+        baseURI = "http://localhost";
+        port = 8080;
+        basePath = "/api";
+
+        // Cadastrar usuario
+        given()
+                .body("{\n" +
+                        "  \"nome\": \"gabi\",\n" +
+                        "  \"cpf\": 88093236093,\n" +
+                        "  \"email\": \"gabi@email.com\",\n" +
+                        "  \"valor\": 9200,\n" +
+                        "  \"parcelas\": 2,\n" +
+                        "  \"seguro\": true\n" +
+                        "}")
+                .contentType(ContentType.JSON)
+                .when()
+                .post("/v1/simulacoes")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(201);
+
+    }
+
+    @Test
+    public void testDadoQueCadastroUsuario07QuandoPreenchoAsiInformacoesEntaoValidoStatusCode201() {
+        // Configurar o caminho comum de acesso a minha API Rest
+        baseURI = "http://localhost";
+        port = 8080;
+        basePath = "/api";
+
+        // Cadastrar usuario
+        given()
+                .body("{\n" +
+                        "  \"nome\": \"pablo\",\n" +
+                        "  \"cpf\": 55" +
+                        "" +
+                        "093236093,\n" +
+                        "  \"email\": \"papito@email.com\",\n" +
+                        "  \"valor\": 7200,\n" +
+                        "  \"parcelas\": 3,\n" +
+                        "  \"seguro\": true\n" +
+                        "}")
+                .contentType(ContentType.JSON)
+                .when()
+                .post("/v1/simulacoes")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(201);
+
+
+    }
+
+    @Test
+    public void testDadoQueCadastroUsuario08QuandoPreenchoAsiInformacoesEntaoValidoStatusCode201() {
+        // Configurar o caminho comum de acesso a minha API Rest
+        baseURI = "http://localhost";
+        port = 8080;
+        basePath = "/api";
+
+        // Cadastrar usuario
+        given()
+                .body("{\n" +
+                        "  \"nome\": \"Ezequias\",\n" +
+                        "  \"cpf\": 11093236093,\n" +
+                        "  \"email\": \"zequias@email.com\",\n" +
+                        "  \"valor\": 6200,\n" +
+                        "  \"parcelas\": 3,\n" +
+                        "  \"seguro\": true\n" +
+                        "}")
+                .contentType(ContentType.JSON)
+                .when()
+                .post("/v1/simulacoes")
+                .then()
+                .log().all()
+                .assertThat()
+                .statusCode(201);
+
+    }
+}
