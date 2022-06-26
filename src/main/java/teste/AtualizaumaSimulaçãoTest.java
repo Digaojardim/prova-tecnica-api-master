@@ -27,6 +27,7 @@ public class AtualizaumaSimulaçãoTest {
 
 
     }
+
     @Test
     public void AtualizarCp01fTest() {
         given()
@@ -39,12 +40,11 @@ public class AtualizaumaSimulaçãoTest {
                         "  \"seguro\": true\n" +
                         "}")
                 .contentType(ContentType.JSON)
-        .when()
+                .when()
                 .put("http://localhost:8080/api/v1/simulacoes/97093236014")
-        .then()
+                .then()
                 .statusCode(200)
-                   .log().all();
-
+                .log().all();
 
 
     }
@@ -68,8 +68,8 @@ public class AtualizaumaSimulaçãoTest {
                 .log().all();
 
 
-
     }
+
     @Test
     public void Atualizar03Cp02fTest() {
         given()
@@ -87,7 +87,6 @@ public class AtualizaumaSimulaçãoTest {
                 .then()
                 .statusCode(200)
                 .log().all();
-
 
 
     }
@@ -111,8 +110,26 @@ public class AtualizaumaSimulaçãoTest {
                 .log().all();
 
 
-
     }
 
+    @Test
+    public void Atualizar05Cp02fTest() {
+        given()
+                .body("{\n" +
+                        "  \"nome\": \"Fulano d Tal\",\n" +
+                        "  \"cpf\":34093236093,\n" +
+                        "  \"email\": \"email@email.com\",\n" +
+                        "  \"valor\": 1200,\n" +
+                        "  \"parcelas\": 3,\n" +
+                        "  \"seguro\": true\n" +
+                        "}")
+                .contentType(ContentType.JSON)
+        .when()
+                .put("http://localhost:8080/api/v1/simulacoes/34093236093")
+        .then()
+                .statusCode(200)
+                .log().all();
 
+
+    }
 }

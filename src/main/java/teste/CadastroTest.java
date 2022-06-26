@@ -19,16 +19,16 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"papito\",\n" +
-                        "  \"cpf\": 97093236093,\n" +
+                        "  \"cpf\": 97093236091,\n" +
                         "  \"email\": \"papito@email.com\",\n" +
                         "  \"valor\": 7200,\n" +
                         "  \"parcelas\": 3,\n" +
                         "  \"seguro\": true\n" +
                         "}")
                 .contentType(ContentType.JSON)
-                .when()
+        .when()
                 .post("/v1/simulacoes")
-                .then()
+        .then()
                 .log().all()
                 .assertThat()
                 .statusCode(201);
@@ -47,16 +47,16 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"joao\",\n" +
-                        "  \"cpf\": 47093236093,\n" +
+                        "  \"cpf\": 47093236077,\n" +
                         "  \"email\": \"papito@email.com\",\n" +
                         "  \"valor\": 2200,\n" +
                         "  \"parcelas\": 3,\n" +
                         "  \"seguro\": true\n" +
                         "}")
                 .contentType(ContentType.JSON)
-                .when()
+        .when()
                 .post("/v1/simulacoes")
-                .then()
+        .then()
                 .log().all()
                 .assertThat()
                 .statusCode(201);
@@ -75,7 +75,7 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"Pedro\",\n" +
-                        "  \"cpf\": 45093236093,\n" +
+                        "  \"cpf\": 45093236078,\n" +
                         "  \"email\": \"pedro@email.com\",\n" +
                         "  \"valor\": 8200,\n" +
                         "  \"parcelas\": 3,\n" +
@@ -102,7 +102,7 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"Gabril\",\n" +
-                        "  \"cpf\": 34093236093,\n" +
+                        "  \"cpf\": 34093236009,\n" +
                         "  \"email\": \"biel@email.com\",\n" +
                         "  \"valor\": 6700,\n" +
                         "  \"parcelas\": 3,\n" +
@@ -129,7 +129,7 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"Araujo\",\n" +
-                        "  \"cpf\": 83493236093,\n" +
+                        "  \"cpf\": 83493236045,\n" +
                         "  \"email\": \"araujo@email.com\",\n" +
                         "  \"valor\": 7200,\n" +
                         "  \"parcelas\": 3,\n" +
@@ -156,7 +156,7 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"gabi\",\n" +
-                        "  \"cpf\": 88093236093,\n" +
+                        "  \"cpf\": 88093236000,\n" +
                         "  \"email\": \"gabi@email.com\",\n" +
                         "  \"valor\": 9200,\n" +
                         "  \"parcelas\": 2,\n" +
@@ -181,16 +181,14 @@ public class CadastroTest {
 
         // Cadastrar usuario
         given()
-                .body("{\n" +
-                        "  \"nome\": \"pablo\",\n" +
-                        "  \"cpf\": 55" +
-                        "" +
-                        "093236093,\n" +
-                        "  \"email\": \"papito@email.com\",\n" +
-                        "  \"valor\": 7200,\n" +
-                        "  \"parcelas\": 3,\n" +
-                        "  \"seguro\": true\n" +
-                        "}")
+                .body("{\\n\" +\n" +
+                        "                        \"  \\\"nome\\\": \\\"gabi\\\",\\n\" +\n" +
+                        "                        \"  \\\"cpf\\\": 88093236099,\\n\" +\n" +
+                        "                        \"  \\\"email\\\": \\\"gabi@email.com\\\",\\n\" +\n" +
+                        "                        \"  \\\"valor\\\": 9200,\\n\" +\n" +
+                        "                        \"  \\\"parcelas\\\": 2,\\n\" +\n" +
+                        "                        \"  \\\"seguro\\\": true\\n\" +\n" +
+                        "                        \"}")
                 .contentType(ContentType.JSON)
                 .when()
                 .post("/v1/simulacoes")
@@ -213,7 +211,7 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"Ezequias\",\n" +
-                        "  \"cpf\": 11093236093,\n" +
+                        "  \"cpf\": 11093236011,\n" +
                         "  \"email\": \"zequias@email.com\",\n" +
                         "  \"valor\": 6200,\n" +
                         "  \"parcelas\": 3,\n" +
@@ -240,16 +238,16 @@ public class CadastroTest {
         given()
                 .body("{\n" +
                         "  \"nome\": \"Sandro\",\n" +
-                        "  \"cpf\": 66093236093,\n" +
+                        "  \"cpf\": 66093236003,\n" +
                         "  \"email\": \"sadro@email.com\",\n" +
                         "  \"valor\": 7800,\n" +
                         "  \"parcelas\": 2,\n" +
                         "  \"seguro\": true\n" +
                         "}")
                 .contentType(ContentType.JSON)
-                .when()
+        .when()
                 .post("/v1/simulacoes")
-                .then()
+        .then()
                 .log().all()
                 .assertThat()
                 .statusCode(201);
